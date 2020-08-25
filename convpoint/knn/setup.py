@@ -18,4 +18,5 @@ setup(
     name = "KNN NanoFLANN",
     ext_modules = ext_modules,
     cmdclass = {'build_ext': build_ext},
+    include_dirs=[numpy.get_include()]
 )
