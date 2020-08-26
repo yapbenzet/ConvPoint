@@ -31,7 +31,7 @@ def wred(str):
     return bcolors.FAIL+str+bcolors.ENDC
 
 
-filelist_train=[
+"""filelist_train=[
         "bildstein_station1_xyz_intensity_rgb",
         "bildstein_station3_xyz_intensity_rgb",
         "bildstein_station5_xyz_intensity_rgb",
@@ -48,7 +48,7 @@ filelist_train=[
         "untermaederbrunnen_station1_xyz_intensity_rgb",
         "untermaederbrunnen_station3_xyz_intensity_rgb",
     ]
-
+"""
 filelist_test = [
         "birdfountain_station1_xyz_intensity_rgb",
         "castleblatten_station1_intensity_rgb",
@@ -66,7 +66,7 @@ filelist_test = [
         "stgallencathedral_station3_intensity_rgb",
         "stgallencathedral_station6_intensity_rgb",
         ]
-
+"""
 print("Creating train directories...", end="", flush=True)
 savedir = os.path.join(args.savedir, "train", "pointcloud_txt")
 os.makedirs(savedir, exist_ok=True)
@@ -104,7 +104,7 @@ for filename in filelist_train:
         print(wred(f'Error -- points file does not exists: {os.path.join(args.rootdir, "TRAIN", filename_txt)}'))
 
 print("Done")
-
+"""
 
 print("Creating test directories...", end="", flush=True)
 savedir = os.path.join(args.savedir, "test", "pointcloud_txt")
